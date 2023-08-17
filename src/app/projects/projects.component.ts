@@ -12,4 +12,26 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class ProjectsComponent {
 
+  images: string[] = [
+    './assets/images/Pracofi_evi.png',
+    './assets/images/kinymuulogo.png',
+    './assets/images/kinymuuk.png',
+    // Agrega más URLs de imágenes según necesites
+    
+    
+  ];
+  //acomodIMG lo uso para poner la lista en valor 0
+  acomodIMG: number = 0;
+
+  showImage(index: number): boolean {
+    return index === this.acomodIMG;
+  }
+
+  nextImage() {
+    this.acomodIMG = (this.acomodIMG + 1) % this.images.length;
+  }
+  
+  prevImage() {
+    this.acomodIMG = (this.acomodIMG - 1 + this.images.length) % this.images.length;
+  }
 }
