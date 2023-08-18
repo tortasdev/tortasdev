@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:'About-us',component:AboutUsComponent},
   {path:'Services',component:ServicesComponent},
   {path:'Contact',component:ContactComponent},
-  {path:'**',redirectTo: "home"}
+  {path:'**',redirectTo: "Home"}
 ];
 
 @NgModule({
