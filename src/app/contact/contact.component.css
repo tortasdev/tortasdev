@@ -18,27 +18,26 @@ h1{
     padding-bottom: 10px;
 }
 
-
 #form{
-	height: 100%;	
+	height: 100%;
 	overflow: hidden;
 	position: relative;
-	
 }
+
 form{
 	margin: 0 auto;
 	width: 500px;
 	padding-top: 40px;
 	color: white;
 	position: relative;
-	
-	
 }
+
 label, input, textarea{
-	display: block;	
+	display: block;
 }
+
 input, textarea{
-	width: 500px;	
+	width: 500px;
 	border: none;
 	border-radius: 20px;
 	outline: none;
@@ -54,15 +53,14 @@ input, textarea{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	
 }
 input:focus, textarea:focus{
-	border: solid 3px #c277e0;	
+	border: solid 3px #c277e0;
 }
 
 textarea{
-	height: 100px;	
-	resize: none; 
+	height: 100px;
+	resize: none;
 	overflow: auto;
 }
 input[type="submit"]{
@@ -80,8 +78,8 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
 	background-color: #9d0ee5;
-	
 }
+
 label{
 	font-size: 1.5em;
 	margin-top: 20px;
