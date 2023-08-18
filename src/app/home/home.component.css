@@ -187,6 +187,10 @@
     border-radius: 50%;
 }
 
+.home-sci-mobile{
+    display: none;
+}
+
 .glowing-circle span{
     position: absolute;
     width: 100%;
