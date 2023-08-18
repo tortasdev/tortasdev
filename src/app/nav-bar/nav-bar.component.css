@@ -71,6 +71,10 @@
     display: none;
 }
 
+.logo-mobile{
+    display: none;
+}
+
 /*Break points*/
 
 @media (max-width: 992px){
@@ -82,6 +86,15 @@
 @media (max-width: 768px){
     .icons{
         display: inline-flex;        
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-mobile{
+        display: block;
+        width: 50px;
     }
 
     #check:checked~.icons #menu-icon{

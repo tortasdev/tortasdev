@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgth@300;400;500;600;700;800;900&display=swap');
 
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +10,11 @@
 
 body{
     min-height: 100vh;
-    background: url('./assets/images/background.jpg') no-repeat;
-    background-size: cover;
+    /*background: url('./assets/images/background.jpg') no-repeat;*/
+    /*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    background-size: cover;*/
+    background: #0c1022;
+    color: #fff;
     background-position: center;
 }
