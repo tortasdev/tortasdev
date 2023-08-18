@@ -1,31 +1,30 @@
 <div id="container-id">
     <header>
-        <h1>Let's work together</h1>
+      <h1>Let's work together</h1>
     </header>
     <div id="form">
-    <form>
-    
-    <div class="formgroup" id="name-form">
-        <label for="name">Your name</label>
-        <input type="text" id="name" name="name" required />
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="formgroup" id="name-form">
+          <label for="name">Your name</label>
+          <input type="text" id="name" formControlName="name" required />
+        </div>
+  
+        <div class="formgroup" id="phone-form">
+          <label for="phone">Your phone</label>
+          <input type="tel" id="phone" formControlName="phone" required />
+        </div>
+  
+        <div class="formgroup" id="email-form">
+          <label for="email">Your e-mail</label>
+          <input type="email" id="email" formControlName="email" required />
+        </div>
+  
+        <div class="formgroup" id="message-form">
+          <label for="message">Your message</label>
+          <textarea id="message" formControlName="message" required></textarea>
+        </div>
+  
+        <input type="submit" value="Send your message!" [disabled]="contactForm.invalid" />
+      </form>
     </div>
-
-    <div class="formgroup" id="phone-form">
-        <label for="name">Your phone</label>
-        <input type="tel" id="phone" name="phone" required />
-    </div>
-    
-    <div class="formgroup" id="email-form">
-        <label for="email">Your e-mail</label>
-        <input type="email" id="email" name="email" required/>
-    </div>
-    
-    <div class="formgroup" id="message-form">
-        <label for="message">Your message</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-    
-        <input type="submit" value="Send your message!" />
-    </form>
-    </div>
-</div>
+  </div>
