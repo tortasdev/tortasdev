@@ -20,18 +20,33 @@ export class ProjectsComponent {
     
     
   ];
+  Enlace: string[] = [
+    'pracofi.com',
+
+    // Agrega más 
+  ];
   //acomodIMG lo uso para poner la lista en valor 0
   acomodIMG: number = 0;
+  acomodURL: number = 0;
 
   showImage(index: number): boolean {
     return index === this.acomodIMG;
+
+  }
+  showEnla(index: number): boolean {
+    return index === this.acomodURL;
   }
 
   nextImage() {
     this.acomodIMG = (this.acomodIMG + 1) % this.images.length;
+    this.acomodURL= (this.acomodURL + 1) % this.Enlace.length;
   }
   
   prevImage() {
     this.acomodIMG = (this.acomodIMG - 1 + this.images.length) % this.images.length;
+    this.acomodURL = (this.acomodURL - 1 + this.Enlace.length) % this.Enlace.length;
   }
+ 
+  
+
 }
