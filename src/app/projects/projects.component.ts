@@ -12,16 +12,21 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class ProjectsComponent {
 
+
+   generateSafeUrl(url: string): string {
+    // Reemplazar "http://localhost:4200" con una URL segura
+    const safeUrl = url.replace('', 'https://');
+    return safeUrl;
+  }
   images: string[] = [
     './assets/images/Pracofi_evi.png',
-    './assets/images/kinymuulogo.png',
-    './assets/images/kinymuuk.png',
+    './assets/images/EHC_evi.png',
     // Agrega más URLs de imágenes según necesites
     
     
   ];
   Enlace: string[] = [
-    'pracofi.com',
+    'pracofi.com','eduardohc.com.mx',
 
     // Agrega más 
   ];

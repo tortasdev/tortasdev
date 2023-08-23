@@ -4,7 +4,7 @@
   <div class="carousel">
     <img *ngFor="let image of images; let i = index" [src]="image" [hidden]="!showImage(i)">
   </div>
-  <a *ngFor="let enlac of Enlace; let e = index" [href]="enlac" [hidden]="!showEnla(e)">visitar</a>
+  <a *ngFor="let enlac of Enlace; let e = index" [href]="generateSafeUrl(enlac)" [hidden]="!showEnla(e)">visitar</a>
 </section>
 
 <div class="button-container">
