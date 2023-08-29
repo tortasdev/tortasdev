@@ -237,71 +237,7 @@
     }
     .home-sci{
         display: none;
-    }
-    .home-sci-mobile a{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background: linear-gradient(45deg, #860ead, #115fbd ,#860ead);
-        border-radius: 50%;
-        font-size: 20px;
-        color: #fff;
-        text-decoration: none;
-        margin: 20px 0;
-        z-index: 1;
-    }
-    
-    .home-sci-mobile a:nth-child(1){
-        opacity: 0;
-        animation: slideBottom 1s ease forwards;
-        animation-delay: 2.1s;
-    }
-    
-    .home-sci-mobile a:nth-child(3){
-        opacity: 0;
-        animation: slideTop 1s ease forwards;
-        animation-delay: 2.1s;
-    }
-    
-    .home-sci-mobile a:nth-child(2){
-        opacity: 0;
-        animation: slideRight 1s ease forwards;
-        animation-delay: 2.1s;
-    }
-    
-    .home-sci-mobile a::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, #860ead, #115fbd ,#860ead);
-        border-radius: 50%;    
-        z-index: -1;
-        transition: .5s ease;
-    }
-    
-    .home-sci-mobile a::after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #0c1022;
-        border-radius: 50%;
-        transform: scale(.88);
-        z-index: -1;
-        transition: .5s ease;
-    }
-    
-    .home-sci-mobile a:hover::before{
-        filter: blur(5px);
-    }
-    
-    .home-sci-mobile a:hover::after{
-        transform: scale(0);
-    }
+    }    
 }
 
 
