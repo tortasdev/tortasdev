@@ -8,4 +8,6 @@ import 'boxicons';
 })
 export class NavBarComponent {
 
+  
+
 }
