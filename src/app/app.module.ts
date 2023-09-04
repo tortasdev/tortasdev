@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import 'boxicons';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -25,7 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     ProjectsComponent,
     ServicesComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent    
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
