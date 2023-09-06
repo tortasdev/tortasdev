@@ -20,13 +20,12 @@ export class ProjectsComponent {
   }
   images: string[] = [
     './assets/images/Pracofi_evi.png',
-    './assets/images/EHC_evi.png',
     // Agrega más URLs de imágenes según necesites
     
     
   ];
   Enlace: string[] = [
-    'pracofi.com','eduardohc.com.mx',
+    'pracofi.com',
 
     // Agrega más 
   ];
