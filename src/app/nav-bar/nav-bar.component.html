@@ -1,15 +1,16 @@
 <head>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.14.0/css/flag-icons.min.css" />
 </head>
 <header class="header">
 
-    
-    <a routerLink="/Home"> 
 
-        <img  width="200px" class="logo" src=".\assets\images\kinymuulogo2.png">
-        <img  width="200px" class="logo-mobile" src=".\assets\images\kinymuckwhite-removebg.png">
-      </a>
-    
+    <a routerLink="/Home">
+
+        <img width="200px" class="logo" src=".\assets\images\kinymuulogo2.png">
+        <img width="200px" class="logo-mobile" src=".\assets\images\kinymuckwhite-removebg.png">
+    </a>
+
     <input type="checkbox" id="check">
     <label for="check" class="icons">
         <i class='bx bx-menu' id="menu-icon"></i>
@@ -17,9 +18,24 @@
     </label>
 
     <nav class="navbar">
-       <a routerLink="/Home">Home</a>
+        <a routerLink="/Home">Home</a>
         <a routerLink="/About-us">About Us</a>
         <a routerLink="/Services">Services</a>
-        <a routerLink="/Contact">Contact</a>        
+        <a routerLink="/Contact">Contact</a>
+        <div class="flex flex-row justify-center select-none">
+            <div class="flex flex-row justify-center right-1 ">
+                <button
+                    class="flex flex-row items-center border border-gray-300 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none rounded" value="en">
+                    <span class="text-md m-0.5">English</span>
+                    <span class="fi fi-us fis mx-1 "></span>
+                </button>
+                <button
+                    class="flex flex-row items-center border border-gray-300 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none rounded" value="es">
+                    <span class="text-md m-0.5">Spanish</span>
+                    <span class="fi fi-es fis mx-1 "></span>
+                </button>
+            </div>
+
+        </div>
     </nav>
 </header>
