@@ -29,5 +29,9 @@
 	"service8": "Consulting",
 	"letswork": "Let's work together",
 	"sendYourMessage": "¡Contact us! Send your message",
-	"sendMessageButton": "Send Your Message"
+	"sendMessageButton": "Send Your Message",
+	"buttonLearnMore": "Learn more",
+	"footerText": "All Rights Reserved.",
+	"languageEnglish": "English",
+	"languageSpanish": "Spanish"
 }

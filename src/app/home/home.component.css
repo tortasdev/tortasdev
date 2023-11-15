@@ -10,6 +10,7 @@
 .home-content{
     max-width: 550px;
     margin-left: -30px;
+    text-align: justify;
 }
 
 .home-content h1{
