@@ -1,3 +1,3 @@
 export const constants = {
-  LANGUAGE_DEFAULT: 'en'
+  LANGUAGE_DEFAULT: 'es'
 };
