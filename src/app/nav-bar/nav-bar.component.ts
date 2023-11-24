@@ -12,6 +12,7 @@ const { LANGUAGE_DEFAULT } = constants;
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
+  showIconA: boolean = true;
   constructor(private translate: TranslateService) {
     translate.setDefaultLang(LANGUAGE_DEFAULT);
     translate.use(LANGUAGE_DEFAULT);
@@ -19,5 +20,8 @@ export class NavBarComponent {
 
   useLanguage(language: string): void {
     this.translate.use(language);
+  }
+  toggleIcons() {
+    this.showIconA = !this.showIconA;
   }
 }

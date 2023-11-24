@@ -22,22 +22,18 @@
         <a [translate]="'AboutUs'" routerLink="/About-us"></a>
         <a [translate]="'Services'" routerLink="/Services"></a>
         <a [translate]="'Contact'" routerLink="/Contact"></a>
-        <div class="flex flex-row justify-center select-none">
-            <div class="flex flex-row justify-center right-1 ">
-                <button
-                    (click)="useLanguage('en')"
-                    class="flex flex-row items-center border border-gray-300 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none rounded" value="en">
-                    <span [translate]="'languageEnglish'" class="text-md m-0.5"></span>
-                    <span class="fi fi-us fis mx-1 "></span>
-                </button>
-                <button
-                    (click)="useLanguage('es')"
-                    class="flex flex-row items-center border border-gray-300 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none rounded" value="es">
-                    <span [translate]="'languageSpanish'" class="text-md m-0.5"></span>
-                    <span class="fi fi-es fis mx-1 "></span>
-                </button>
+        <button (click)="toggleIcons(); useLanguage(showIconA ? 'en' : 'es')" class="flex items-center justify-center rounded-md bg-500 p-2 text-white focus:outline-none">
+            <div id="translate" class="flex items-center mr-2">
+              <img class="h-fit w-4" src="https://www.svgrepo.com/show/326688/language-outline.svg" alt="Translate Icon">
             </div>
-
-        </div>
+            <div id="iconA" [ngClass]="{ 'hidden': !showIconA }" class="flex items-center mr-2">
+              <span class="mr-2">EN</span>
+              <img class="h-5 w-5" src="https://www.reshot.com/preview-assets/icons/JY4FM3RDA9/american-flag-JY4FM3RDA9.svg" alt="Icono A">
+            </div>
+            <div id="iconB" [ngClass]="{ 'hidden': showIconA }" class="hidden flex items-center mr-2">
+              <span class="mr-2">ES</span>
+              <img class="h-5 w-5" src="https://www.reshot.com/preview-assets/icons/7KVW45XF6R/flag-7KVW45XF6R.svg" alt="Icono B">
+            </div>
+          </button>
     </nav>
 </header>
